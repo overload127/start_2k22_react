@@ -1,0 +1,58 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:import/warnings',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:@typescript-eslint/recommended',
+    'airbnb',
+    'airbnb/hooks',
+    'airbnb-typescript',
+    // Работает только если последний
+    'plugin:react/jsx-runtime',
+    'plugin:prettier/recommended',
+    'prettier',
+    'plugin:json/recommended',
+    'plugin:jsonc/recommended-with-jsonc',
+  ],
+  overrides: [],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+    project: './tsconfig.json',
+  },
+  plugins: ['@typescript-eslint', 'react', 'prettier', 'import', 'react-hooks', 'eslint-plugin-json'],
+  rules: {
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['state'] }],
+    'require-jsdoc': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: [2, 'single'],
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true,
+      },
+    ],
+    'prettier/prettier': ['error', { singleQuote: true }],
+    semi: ['error', 'always'],
+  },
+  ignorePatterns: ['.eslintrc.js'],
+};

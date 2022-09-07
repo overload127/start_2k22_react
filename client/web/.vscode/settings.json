@@ -1,0 +1,33 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "eslint.options": { "overrideConfigFile": "../.eslintrc.js" },
+    "eslint.format.enable": true,
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.formatOnSave": false,
+    },
+    "[json]": {
+        "editor.formatOnSave": false,
+    },
+    "[jsx]": {
+        "editor.tabSize": 2
+    },
+    "[tsx]": {
+        "editor.tabSize": 2
+    },
+    "[react]": {
+        "editor.tabSize": 2
+    },
+    "liveServer.settings.CustomBrowser": "chrome"
+}

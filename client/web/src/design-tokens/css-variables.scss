@@ -1,0 +1,92 @@
+$main-color-background: #2A2A2A;
+$main-color-background-border: #404040;
+
+// Общие параметры одинаковые для всех
+$main-shadow1: #00000040;
+$main-color-text-important: #1ceef0;
+$main-color: #eb575780;
+$main-color-important: #EB5757;
+
+$main-color-text2: #e5e5e580;
+$main-color-text3: #828282;
+
+
+
+
+$color-background: #303030;
+$color-background-box: $main-color-background;
+$color-background-box-border: $main-color-background-border;
+$color-field: $main-color-background;
+$color-field-border: $main-color-background-border;
+$color-button-back: #1ceef026;
+$color-button-border: #1CEEF040;
+$color-button-shadow: $main-shadow1;
+$color-text-normal: #FFFFFF;
+$color-text-label:#BDBDBD;
+$color-text-label-on-map:#000000;
+$color-text-header-block: #1ceef080;
+
+
+
+
+// блок-сайдбар-инфа о городе
+$color-text-city-name: $main-color-text-important;
+$size-width-city-sidebar: 300px;
+$color-text-city-term: $color-text-label-on-map;
+
+// rts итем блок на странице списка
+$color-rts-block-border: #82828280;
+$color-rts-block-shadow: #bdbdbd40;
+$color-rts-block-border-hover: $main-color-text-important;
+$color-rts-block-border-shadow: $main-color-text-important;
+$color-rts-block-header-background: #202020;
+$color-rts-block-header-text: $main-color-text3;
+$color-rts-block-body-text: #F2F2F2;
+$color-rts-block-border-adaptive: #21965380;
+$color-rts-block-border-shadow-adaptive: #6fcf9740;
+$color-rts-block-text-adaptive: #6FCF97;
+$color-rts-block-border-offline: $main-color-important;
+$color-rts-block-border-shadow-offline: #eb575740;
+$color-rts-block-text-offline: $main-color-important;
+
+$color-rts-block-background-observation: $main-color-background;
+$color-rts-block-border-observation: $color-rts-block-border;
+
+$color-rts-block-border-manualControl: #f2994a80;
+$color-rts-block-shadow-observation: #f2994a40;
+
+// Абстрактные значения. Только наследуются
+$abc-size-width: 150px;
+$abc-size-height: 24px;
+
+// Параметры кнопак
+$size-width-button: $abc-size-width;
+$size-height-button: $abc-size-height;
+
+// Параметры текстовых полей
+$size-width-input: $abc-size-width;
+$size-height-input: $abc-size-height;
+
+// блок-сайдбар-инфа о РТС
+$size-width-rts-sidebar: 320px;
+
+// Блок навбар
+$color-navbar-background: $main-color-background;
+$color-navbar-border: $main-color-background-border;
+$color-navbar-text: $color-text-header-block;
+$color-navbar-text-active: $main-color-text-important;
+
+$color-navbar-text-attention: $main-color;
+$color-navbar-text-attention-active: $main-color-important;
+
+
+
+
+
+
+
+// Тестовые цвета
+$color-dev1: #992667;
+$color-dev2: #BF3030;
+$color-dev3: #269926;
+$color-dev4: #86B32D;
