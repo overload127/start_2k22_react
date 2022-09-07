@@ -24,7 +24,12 @@
         "editor.tabSize": 2
     },
     "[tsx]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[ts]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[react]": {
         "editor.tabSize": 2

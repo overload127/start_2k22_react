@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import { useNavigate, useLocation } from 'react-router-dom';
 
-// import { authSlice } from '../../store/reducers/AuthSlice';
 import { useAppDispatch } from '../../hooks/redux';
 import { loginAuth } from '../../store/reducers/ActionCreators';
 
@@ -13,14 +12,6 @@ interface IState {
 interface IFrom {
   pathname?: string;
 }
-
-// interface IAuthState {
-//   isFirstAuth: boolean;
-//   isFetching: boolean;
-//   error: string;
-//   user: IUser;
-//   isBadConnection: boolean;
-// }
 
 function Login(): JSX.Element {
   const [email, setEmail] = useState<string>('');
@@ -40,7 +31,8 @@ function Login(): JSX.Element {
   return (
     <div>
       <span>
-        Страница логина. Сюда можно попасть по url /login. Так же на эту страницу Вас может перенаправить сайт, в случае если Вы не авторизованы, но хотите получить доступ к приватной информации.
+        Страница логина. Сюда можно попасть по url /login. Так же на эту страницу Вас может перенаправить сайт, в случае
+        если Вы не авторизованы, но хотите получить доступ к приватной информации.
       </span>
       <input onChange={(e) => setEmail(e.target.value)} value={email} type="text" placeholder="Email" />
       <input onChange={(e) => setPassword(e.target.value)} value={password} type="password" placeholder="Пароль" />

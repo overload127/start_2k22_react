@@ -37,7 +37,11 @@ function App(): JSX.Element {
 
         <Route path="blog/*" element={withSuspense(CMS)} />
         <Route path="login" element={withSuspense(LoginGlobal)} />
-        {user.isAnonym ? <Route path="/" element={<Navigate to="/blog" replace />} /> : <Route path="/" element={<Navigate to="/app" replace />} />}
+        {user.isAnonym ? (
+          <Route path="/" element={<Navigate to="/blog" replace />} />
+        ) : (
+          <Route path="/" element={<Navigate to="/app" replace />} />
+        )}
         <Route path="*" element={withSuspense(Page404)} />
       </Routes>
     </div>
