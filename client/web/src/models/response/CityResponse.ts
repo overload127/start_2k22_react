@@ -1,5 +1,3 @@
-import { IUser } from '../IUser';
-
 export interface ICityResponse {
   name: string;
   gmt: number;

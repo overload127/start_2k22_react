@@ -1,26 +1,28 @@
 
-    .container{
-        align-items: center;
-        background-color: #f0f3fa;
-                box-sizing: border-box;
+.container {
+    align-items: center;
+    background-color: #f0f3fa;
+    box-sizing: border-box;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    padding: 6px 8px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .icon {
+        color: #fff;
         display: flex;
-        height: 30px;
-                    justify-content: center;
-        padding: 6px 8px;
-        position: absolute;
-        top: 0;
-                    width: 100%;
-        .icon{
-            color: #fff;
-            display: flex;
-            margin-right: 8px;
-        }
-        .text{
-            color: #131722;
-            font-size: 13px;
-                    line-height: 19px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+        margin-right: 8px;
     }
+
+    .text {
+        color: #131722;
+        font-size: 13px;
+                line-height: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

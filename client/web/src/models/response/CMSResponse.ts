@@ -1,5 +1,3 @@
-import { IUser } from '../IUser';
-
 export interface INewResponse {
   oid: string;
   title: string;

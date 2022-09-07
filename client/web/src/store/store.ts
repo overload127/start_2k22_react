@@ -2,20 +2,8 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import authReducer from './reducers/AuthSlice';
 
-// import renderReducer from './renderReducer';
-// import contactsReducer from './contactsReducer';
-// import rtsReducer from './rtsReducer';
-// import appReducer from './appReducer';
-// import cmsReducer from './cmsReducer';
-
 const rootReducer = combineReducers({
   authReducer,
-  // auth: authReducer,
-  // contacts: contactsReducer,
-  // rts: rtsReducer,
-  // app: appReducer,
-  // render: renderReducer,
-  // cms: cmsReducer,
 });
 
 export const setupStore = () => {
